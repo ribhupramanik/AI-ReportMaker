@@ -10,7 +10,7 @@ def serpapi_search(query: str, num_results: int = 3):
         "engine": "google",
         "q": query,
         "api_key": api_key,
-        # other params you might want e.g., "gl": "us"
+        
     }
     search = GoogleSearch(params)
     data = search.get_dict()
