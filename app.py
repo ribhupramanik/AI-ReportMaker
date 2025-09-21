@@ -24,7 +24,7 @@ class Report(db.Model):
     query = db.Column(db.String(512), nullable=False)
     summary = db.Column(db.Text, nullable=False)
     sources = db.Column(db.Text)  # JSON string list of sources/metadata
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=datetime.now)
 
 # Create tables at startup
 with app.app_context():
